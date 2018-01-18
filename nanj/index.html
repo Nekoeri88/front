@@ -1,35 +1,98 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-    <meta charset="utf-8">
-    <title>NanjCoin</title>
-	<meta name="description" content="なんJ民によるなんJ民のための仮想通貨NANJ">
-	<link rel="stylesheet" href="./css/normalize.css" type="text/css">
-	<link rel="stylesheet" href="./css/index.css" type="text/css">
+  <meta charset="utf-8">
+  <title>NanjCoin</title>
+  <meta name="description" content="なんJ民によるなんJ民のための仮想通貨NANJ">
+  <link rel="stylesheet" href="./css/normalize.css" type="text/css">
+  <link rel="stylesheet" href="./css/index.css" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script type="text/javascript" src="js\scroll.js"></script>
 </head>
+
 <body>
   <header>
-    <h1><img src="./img/title.jpg"></h1>
-  </header>
-
-	<div id="main">
-    <br/>
-    <br/>
-    <br/>
-		彡(ﾟ)(ﾟ) NANJ is cryptocurrency from 5ch !!
-    <br/>
-    <br/>
-    みんなで買うンゴ!!
-    <br/>
-    <br/>
-    <div id="images">
-      <img src="./img/logo.png">
-      <img src="./img/min.png">
+    <div class="container">
+      <h1>
+        <img src="./img/title.jpg">
+      </h1>
     </div>
-	</div>
+  </header>
+  <nav>
+    <div class="container">
+      <ul class="navbar">
+        <li class="btn_top">TOP</li>
+        <li class="btn_nav">ABOUT</li>
+        <li class="btn_nav">ROADMAP</li>
+        <li class="btn_nav">WHITEPAPER</li>
+        <li class="btn_nav">WALLET</li>
+        <li class="btn_nav">EXCHANGES</li>
+        <li class="btn_nav">COMMUNITY</li>
+      </ul>
+    </div>
+  </nav>
 
-	<footer>
-			<span id="copy">&copy2018 nanjcoin & icchi All rights reserved.</span>
-	</footer>
+  <main>
+    <div class="container">
+      <div id="images">
+        <img src="./img/logo.png">
+        <img src="./img/min.png">
+      </div>
+      <div class="content">
+        <h1>ABOUT</h1>
+        <div class="flex_container">
+          <div class="flex_inner">
+            <h2>NANJとは？</h2>
+            NANJコインは5ch発祥のEthereumトークンです<br>
+            ICOは行われておらず、現時点では全てエアドロップで配布されています
+          </div>
+          <div class="flex_inner">
+            <h2>トークンの詳細</h2>
+            <ul>
+              <li>トークン名：NANJ</li>
+              <li>トークンシンボル：NANJ</li>
+              <li>発行枚数：1京</li>
+              <li>アドレス:0x751537D0e0189c24Fd7e0e4dAb4B83d90f926A87</li>
+              <li>桁数：0</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <h1>ROADMAP</h1>
+        <div class="comingsoon">Coming Soon!</div>
+      </div>
+
+      <div class="content">
+        <h1>WHITEPAPER</h1>
+        <div class="comingsoon">Coming Soon!</div>
+      </div>
+
+      <div class="content">
+        <h1>WALLET</h1>
+        <div class="comingsoon">Coming Soon!</div>
+      </div>
+
+      <div class="content">
+        <h1>EXCHANGES</h1>
+        <div class="comingsoon">Coming Soon!</div>
+      </div>
+
+      <div class="content">
+        <h1>COMMUNITY</h1>
+        <a href="https://twitter.com/nanjcoin?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-count="false">Follow @nanjcoin</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <span id="copy">&copy2018 nanjcoin & icchi All rights reserved.</span>
+    </div>
+  </footer>
 </body>
+
 </html>

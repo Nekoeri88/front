@@ -1,18 +1,10 @@
 $(function () {
   //ページ内スクロール
-  $(".btn_nav").click(function () {
-    var i = $(".btn_nav").index(this)
-    var p = $(".content").eq(i).offset().top;
+  $("a[href^='#']").on("click", function () {
+    var p = $($(this).attr("href")).offset().top;
     $('html,body').animate({ scrollTop: p }, 'fast');
     return false;
   });
-
-  //ページ上部へ戻る
-  $(".btn_top").click(function () {
-    $('html,body').animate({ scrollTop: 0 }, 'fast');
-    return false;
-  });
-
 });
 
 
@@ -35,7 +27,7 @@ $(function () {
 });
 
 $(function () {
-  $(".btn_menu").click(function () {
+  $(".btn_menu").on("click", function () {
     if ($(".navbar").is(":hidden")) {
       $(".navbar").slideDown("fast");
     } else {

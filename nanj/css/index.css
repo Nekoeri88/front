@@ -65,11 +65,17 @@ nav{
 .navbar li{
   flex: 1 1 auto;
   text-align: center;
-  padding: 10px;
 }
 
 .navbar li:hover{
   background: rgb(24, 137, 255);
+}
+
+.navbar li a {
+  display: block;
+  padding: 10px;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 main {
